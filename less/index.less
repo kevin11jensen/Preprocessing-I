@@ -4,56 +4,382 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
+    border: 1px solid blue !important;
+    // background-color: @ceruleanLight;
 }
 
-html, body {
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
     height: 100%;
+    // background-color: rgba(16.5%, 32.2%, 74.5%, 0.1)
 }
 
+@cerulean: rgba(16.5%, 32.2%, 74.5%, 1);
+@ceruleanLight: rgba(16.5%, 32.2%, 74.5%, 0.2);
+
+.container {    //1st level
+    
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: @ceruleanLight;
+
+            a {
+                font-size: 2rem;
+                text-decoration: none;
+                color: @cerulean;
+                @media (max-width: 520px) {
+                    font-size: 1rem;
+                        
+                }
+            }
+    }
+
+    header {    //2nd level
+        display:flex;
+        justify-content: space-between;
+        // align-items: center;
+        margin: 0 1% 1% 1%;
+        width: 98%;
+        height: 66vh;
+        background: url("../img/justMtHood2.jpg");
+        border-bottom: 3px solid @cerulean;
+       
+            div {
+                @media (max-width: 500px) {
+                    font-size: 3rem;
+                        
+                }
+                font-size: 5rem;
+                color: @cerulean;
+
+                    h2 {
+                        @media (max-width: 500px) {
+                            font-size: 2rem;
+                                
+                        }
+                        font-size: 4rem;
+                    }
+
+                    h3 {
+                        @media (max-width: 500px) {
+                            font-size: 1.5rem;
+                                
+                        }
+                        font-size: 3rem;
+                    }
+            }
+            
+           
+            
+    }
+
+    #intro {
+        display:flex;
+        flex-flow: column wrap;
+        align-items: center;
+        text-align: center;
+        font-size: 3rem;
+        margin: 2%;
+        background-color: @ceruleanLight;
+        padding-bottom: 5%;
+        border-bottom: 3px solid @cerulean;
+        border-radius: 1rem;
+        // @media (max-width: 500px) {
+        //     font-size: 1rem;
+                
+        // }
+        @media (max-width: 882px) {
+            font-size: 2rem;
+                
+        }
+        @media (max-width: 650px) {
+            font-size: 1.5rem;
+                
+        }
+        @media (max-width: 520px) {
+            font-size: 1rem;
+                
+        }
+    }
+
+    #skills {
+        #intro();
+    }
+    
+    #work-history {
+        #intro();
+    }
+    #contacts {
+        #intro();
+    }
+}
+
+
+
+
+
+
+
+
+
+// .container {
+    // width: 100%;
+    
+
+//     .hero-image {
+        
+//         background-image: url("../img/justMtHood2.jpg"); /* The image used */
+        
+//       }
+// }
+
+
+// @balooTamma =font-family: 'Baloo Tamma',
+// cursive;
+// @buda =font-family: 'buda',
+// cursive;
+// @ceruleanLight: rgba(16.5%, 32.2%, 74.5%, 0.2);
+// @cerulean: rgba(16.5%, 32.2%, 74.5%, 1);
+// @fontSize =font-size: 3rem;
+
+// .main-container {
+
+//     header {
+        
+
+//         nav {
+//             display: flex;
+//             justify-content: space-around;
+
+//             a {
+//                 text-decoration: none;
+//                 background-color: none;
+//                 font-family: @buda;
+//                 font-size: 2rem;
+//                 color: @cerulean;
+//             }
+//         }
+
+//         .background-image {
+//             display: flex;
+//             justify-content: space-between;
+//             background-image: url("../img/mountHood.gif");
+
+//             .top-info {
+//                 margin-right: 24%;
+//                 margin-top: 3%;
+
+//                 font-family: @buda;
+//                 color: @cerulean;
+
+//                 h1 {
+//                     font-size: 7.5rem;
+//                     font-family: @balooTamma;
+//                 }
+
+//                 h2 {
+//                     font-size: 2rem;
+//                 }
+
+//                 h3 {
+//                     font-size: 1.5rem;
+//                 }
+//             }
+
+
+//         }
+
+//         .mtHood {
+
+//             height: 100vh;
+
+//             @media (max-width: 500px) {}
+//         }
+
+
+//     }
+
+//     .body-container {
+//         font-family: @buda;
+
+//         // background-color: @cerulean;
+//         #intro {
+//             background-color: @ceruleanLight;
+//             margin: 3%;
+//             border-bottom: 3px solid @cerulean;
+
+//             h1 {
+//                 font-size: @fontSize;
+//             }
+
+//         }
+
+//         #skills {
+//             #intro(); //mix-in
+//         }
+
+//         #work-history {
+//             #intro(); //mix-in
+//         }
+
+//         #contacts {
+//             #intro(); //mix-in
+//         }
+
+//     }
+
+    // .body-container {
+    // 	#intro {
+    // 		background-color: @ceruleanLight;
+    // 	}
+    // 	#skills {
+    // 		background-color: @ceruleanLight;
+    // 	}
+    // 	#work-history {
+    // 		background-color: @ceruleanLight;
+    // 	}
+    // 	#contacts {
+    // 		background-color: @ceruleanLight;
+    // 	}
+    // }	
+// }
