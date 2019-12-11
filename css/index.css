@@ -129,7 +129,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
-  border: 1px solid blue !important;
+  /* border: 1px solid blue !important; */
 }
 html {
   font-size: 62.5%;
