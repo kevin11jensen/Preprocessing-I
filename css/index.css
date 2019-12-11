@@ -129,7 +129,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
-  /* border: 1px solid blue !important; */
+  border: 1px solid blue !important;
 }
 html {
   font-size: 62.5%;
@@ -142,6 +142,10 @@ body {
   display: flex;
   justify-content: space-around;
   background-color: rgba(42, 82, 190, 0.2);
+  font-family: 'Racing Sans One', cursive;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 1rem;
 }
 .container nav a {
   font-size: 2rem;
@@ -165,8 +169,9 @@ body {
 .container header div {
   font-size: 5rem;
   color: #2a52be;
+  font-family: 'Racing Sans One', cursive;
 }
-@media (max-width: 500px) {
+@media (max-width: 577px) {
   .container header div {
     font-size: 3rem;
   }
@@ -174,7 +179,7 @@ body {
 .container header div h2 {
   font-size: 4rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 577px) {
   .container header div h2 {
     font-size: 2rem;
   }
@@ -182,7 +187,7 @@ body {
 .container header div h3 {
   font-size: 3rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 577px) {
   .container header div h3 {
     font-size: 1.5rem;
   }
@@ -191,25 +196,25 @@ body {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  text-align: center;
   font-size: 3rem;
   margin: 2%;
   background-color: rgba(42, 82, 190, 0.2);
   padding-bottom: 5%;
   border-bottom: 3px solid #2a52be;
   border-radius: 1rem;
+  font-family: 'Londrina Solid', cursive;
 }
-@media (max-width: 882px) {
+@media (max-width: 945px) {
   .container #intro {
     font-size: 2rem;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 653px) {
   .container #intro {
     font-size: 1.5rem;
   }
 }
-@media (max-width: 520px) {
+@media (max-width: 559px) {
   .container #intro {
     font-size: 1rem;
   }
@@ -218,25 +223,25 @@ body {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  text-align: center;
   font-size: 3rem;
   margin: 2%;
   background-color: rgba(42, 82, 190, 0.2);
   padding-bottom: 5%;
   border-bottom: 3px solid #2a52be;
   border-radius: 1rem;
+  font-family: 'Londrina Solid', cursive;
 }
-@media (max-width: 882px) {
+@media (max-width: 945px) {
   .container #skills {
     font-size: 2rem;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 653px) {
   .container #skills {
     font-size: 1.5rem;
   }
 }
-@media (max-width: 520px) {
+@media (max-width: 559px) {
   .container #skills {
     font-size: 1rem;
   }
@@ -245,52 +250,45 @@ body {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  text-align: center;
-  font-size: 3rem;
   margin: 2%;
   background-color: rgba(42, 82, 190, 0.2);
   padding-bottom: 5%;
   border-bottom: 3px solid #2a52be;
   border-radius: 1rem;
+  font-family: 'Londrina Solid', cursive;
 }
-@media (max-width: 882px) {
-  .container #work-history {
-    font-size: 2rem;
-  }
+.container #work-history h1 {
+  font-size: 3rem;
 }
-@media (max-width: 650px) {
-  .container #work-history {
-    font-size: 1.5rem;
-  }
+.container #work-history p {
+  font-size: 2rem;
 }
-@media (max-width: 520px) {
-  .container #work-history {
-    font-size: 1rem;
-  }
+.container #work-history li {
+  font-size: 2rem;
 }
 .container #contacts {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  text-align: center;
   font-size: 3rem;
   margin: 2%;
   background-color: rgba(42, 82, 190, 0.2);
   padding-bottom: 5%;
   border-bottom: 3px solid #2a52be;
   border-radius: 1rem;
+  font-family: 'Londrina Solid', cursive;
 }
-@media (max-width: 882px) {
+@media (max-width: 945px) {
   .container #contacts {
     font-size: 2rem;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 653px) {
   .container #contacts {
     font-size: 1.5rem;
   }
 }
-@media (max-width: 520px) {
+@media (max-width: 559px) {
   .container #contacts {
     font-size: 1rem;
   }

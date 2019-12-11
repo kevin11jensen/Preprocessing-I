@@ -155,6 +155,13 @@ body {
 @cerulean: rgba(16.5%, 32.2%, 74.5%, 1);
 @ceruleanLight: rgba(16.5%, 32.2%, 74.5%, 0.2);
 
+
+@racing: 'Racing Sans One', cursive;
+
+@londrina: 'Londrina Solid', cursive;
+
+
+
 .container {    //1st level
     
 
@@ -162,8 +169,12 @@ body {
         display: flex;
         justify-content: space-around;
         background-color: @ceruleanLight;
-
+        font-family: @racing;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border-radius: 1rem;
             a {
+                
                 font-size: 2rem;
                 text-decoration: none;
                 color: @cerulean;
@@ -185,23 +196,25 @@ body {
         border-bottom: 3px solid @cerulean;
        
             div {
-                @media (max-width: 500px) {
+                @media (max-width: 577px) {
                     font-size: 3rem;
                         
                 }
                 font-size: 5rem;
                 color: @cerulean;
+                font-family: @racing;
 
                     h2 {
-                        @media (max-width: 500px) {
+                        @media (max-width: 577px) {
                             font-size: 2rem;
                                 
                         }
                         font-size: 4rem;
+                        
                     }
 
                     h3 {
-                        @media (max-width: 500px) {
+                        @media (max-width: 577px) {
                             font-size: 1.5rem;
                                 
                         }
@@ -217,29 +230,31 @@ body {
         display:flex;
         flex-flow: column wrap;
         align-items: center;
-        text-align: center;
+        // text-align: center;
         font-size: 3rem;
         margin: 2%;
         background-color: @ceruleanLight;
         padding-bottom: 5%;
         border-bottom: 3px solid @cerulean;
         border-radius: 1rem;
+        font-family: @londrina;
         // @media (max-width: 500px) {
         //     font-size: 1rem;
                 
         // }
-        @media (max-width: 882px) {
+        @media (max-width: 945px) {
             font-size: 2rem;
                 
         }
-        @media (max-width: 650px) {
+        @media (max-width: 653px) {
             font-size: 1.5rem;
                 
         }
-        @media (max-width: 520px) {
+        @media (max-width: 559px) {
             font-size: 1rem;
                 
         }
+        
     }
 
     #skills {
@@ -247,7 +262,24 @@ body {
     }
     
     #work-history {
-        #intro();
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        margin: 2%;
+        background-color: @ceruleanLight;
+        padding-bottom: 5%;
+        border-bottom: 3px solid @cerulean;
+        border-radius: 1rem;
+        font-family: @londrina;
+        h1 {
+            font-size: 3rem;
+        }
+        p {
+            font-size: 2rem;
+        }
+        li {
+            font-size: 2rem;
+        }
     }
     #contacts {
         #intro();
