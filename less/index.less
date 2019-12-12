@@ -138,7 +138,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
-    border: 1px solid blue !important;
+    // border: 1px solid blue !important;
     // background-color: @ceruleanLight;
 }
 
@@ -162,10 +162,12 @@ body {
 
 
 
-.container {    //1st level
-    
+.container {
+    //main container
+
 
     nav {
+        //navigation
         display: flex;
         justify-content: space-around;
         background-color: @ceruleanLight;
@@ -173,20 +175,24 @@ body {
         padding-top: 2%;
         padding-bottom: 2%;
         border-radius: 1rem;
-            a {
-                
-                font-size: 2rem;
-                text-decoration: none;
-                color: @cerulean;
-                @media (max-width: 520px) {
-                    font-size: 1rem;
-                        
-                }
+
+        a {
+            //links
+
+            font-size: 2rem;
+            text-decoration: none;
+            color: @cerulean;
+
+            @media (max-width: 520px) {
+                font-size: 1rem;
+
             }
+        }
     }
 
-    header {    //2nd level
-        display:flex;
+    header {
+        //header
+        display: flex;
         justify-content: space-between;
         // align-items: center;
         margin: 0 1% 1% 1%;
@@ -194,43 +200,45 @@ body {
         height: 66vh;
         background: url("../img/justMtHood2.jpg");
         border-bottom: 3px solid @cerulean;
-       
-            div {
-                @media (max-width: 577px) {
-                    font-size: 3rem;
-                        
-                }
-                font-size: 5rem;
-                color: @cerulean;
-                font-family: @racing;
 
-                    h2 {
-                        @media (max-width: 577px) {
-                            font-size: 2rem;
-                                
-                        }
-                        font-size: 4rem;
-                        
-                    }
+        div {
+            @media (max-width: 577px) {
+                font-size: 3rem;
 
-                    h3 {
-                        @media (max-width: 577px) {
-                            font-size: 1.5rem;
-                                
-                        }
-                        font-size: 3rem;
-                    }
             }
-            
-           
-            
+
+            font-size: 5rem;
+            color: @cerulean;
+            font-family: @racing;
+
+            h2 {
+                @media (max-width: 577px) {
+                    font-size: 2rem;
+
+                }
+
+                font-size: 4rem;
+
+            }
+
+            h3 {
+                @media (max-width: 577px) {
+                    font-size: 1.5rem;
+
+                }
+
+                font-size: 3rem;
+            }
+        }
+
+
+
     }
 
     #intro {
-        display:flex;
+        display: flex;
         flex-flow: column wrap;
         align-items: center;
-        // text-align: center;
         font-size: 3rem;
         margin: 2%;
         background-color: @ceruleanLight;
@@ -238,53 +246,67 @@ body {
         border-bottom: 3px solid @cerulean;
         border-radius: 1rem;
         font-family: @londrina;
-        // @media (max-width: 500px) {
-        //     font-size: 1rem;
-                
-        // }
-        @media (max-width: 945px) {
+            h1 {
+                background-color: @cerulean;
+            }
+            @media (max-width: 945px) {
             font-size: 2rem;
-                
+
         }
-        @media (max-width: 653px) {
+
+            @media (max-width: 653px) {
             font-size: 1.5rem;
-                
+
         }
-        @media (max-width: 559px) {
+
+         @media (max-width: 559px) {
             font-size: 1rem;
-                
+
         }
-        
+
     }
 
     #skills {
         #intro();
-    }
-    
+
+            h1 {
+                font-size: 3rem;
+                background-color: @cerulean;
+            }
+        }
+
     #work-history {
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        margin: 2%;
-        background-color: @ceruleanLight;
-        padding-bottom: 5%;
-        border-bottom: 3px solid @cerulean;
-        border-radius: 1rem;
-        font-family: @londrina;
-        h1 {
-            font-size: 3rem;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            margin: 2%;
+            background-color: @ceruleanLight;
+            padding-bottom: 5%;
+            border-bottom: 3px solid @cerulean;
+            border-radius: 1rem;
+            font-family: @londrina;
+
+                h1 {
+                    font-size: 3rem;
+                    background-color: @cerulean;
+                }
+
+                p {
+                    font-size: 2rem;
+
+
+                }
+
+                li {
+                    font-size: 1.6rem;
+                }
         }
-        p {
-            font-size: 2rem;
-        }
-        li {
-            font-size: 2rem;
-        }
-    }
+
     #contacts {
         #intro();
+        background-color: @cerulean;
+        }
     }
-}
 
 
 
@@ -294,111 +316,111 @@ body {
 
 
 
-// .container {
+    // .container {
     // width: 100%;
-    
-
-//     .hero-image {
-        
-//         background-image: url("../img/justMtHood2.jpg"); /* The image used */
-        
-//       }
-// }
 
 
-// @balooTamma =font-family: 'Baloo Tamma',
-// cursive;
-// @buda =font-family: 'buda',
-// cursive;
-// @ceruleanLight: rgba(16.5%, 32.2%, 74.5%, 0.2);
-// @cerulean: rgba(16.5%, 32.2%, 74.5%, 1);
-// @fontSize =font-size: 3rem;
+    //     .hero-image {
 
-// .main-container {
+    //         background-image: url("../img/justMtHood2.jpg"); /* The image used */
 
-//     header {
-        
-
-//         nav {
-//             display: flex;
-//             justify-content: space-around;
-
-//             a {
-//                 text-decoration: none;
-//                 background-color: none;
-//                 font-family: @buda;
-//                 font-size: 2rem;
-//                 color: @cerulean;
-//             }
-//         }
-
-//         .background-image {
-//             display: flex;
-//             justify-content: space-between;
-//             background-image: url("../img/mountHood.gif");
-
-//             .top-info {
-//                 margin-right: 24%;
-//                 margin-top: 3%;
-
-//                 font-family: @buda;
-//                 color: @cerulean;
-
-//                 h1 {
-//                     font-size: 7.5rem;
-//                     font-family: @balooTamma;
-//                 }
-
-//                 h2 {
-//                     font-size: 2rem;
-//                 }
-
-//                 h3 {
-//                     font-size: 1.5rem;
-//                 }
-//             }
+    //       }
+    // }
 
 
-//         }
+    // @balooTamma =font-family: 'Baloo Tamma',
+    // cursive;
+    // @buda =font-family: 'buda',
+    // cursive;
+    // @ceruleanLight: rgba(16.5%, 32.2%, 74.5%, 0.2);
+    // @cerulean: rgba(16.5%, 32.2%, 74.5%, 1);
+    // @fontSize =font-size: 3rem;
 
-//         .mtHood {
+    // .main-container {
 
-//             height: 100vh;
-
-//             @media (max-width: 500px) {}
-//         }
+    //     header {
 
 
-//     }
+    //         nav {
+    //             display: flex;
+    //             justify-content: space-around;
 
-//     .body-container {
-//         font-family: @buda;
+    //             a {
+    //                 text-decoration: none;
+    //                 background-color: none;
+    //                 font-family: @buda;
+    //                 font-size: 2rem;
+    //                 color: @cerulean;
+    //             }
+    //         }
 
-//         // background-color: @cerulean;
-//         #intro {
-//             background-color: @ceruleanLight;
-//             margin: 3%;
-//             border-bottom: 3px solid @cerulean;
+    //         .background-image {
+    //             display: flex;
+    //             justify-content: space-between;
+    //             background-image: url("../img/mountHood.gif");
 
-//             h1 {
-//                 font-size: @fontSize;
-//             }
+    //             .top-info {
+    //                 margin-right: 24%;
+    //                 margin-top: 3%;
 
-//         }
+    //                 font-family: @buda;
+    //                 color: @cerulean;
 
-//         #skills {
-//             #intro(); //mix-in
-//         }
+    //                 h1 {
+    //                     font-size: 7.5rem;
+    //                     font-family: @balooTamma;
+    //                 }
 
-//         #work-history {
-//             #intro(); //mix-in
-//         }
+    //                 h2 {
+    //                     font-size: 2rem;
+    //                 }
 
-//         #contacts {
-//             #intro(); //mix-in
-//         }
+    //                 h3 {
+    //                     font-size: 1.5rem;
+    //                 }
+    //             }
 
-//     }
+
+    //         }
+
+    //         .mtHood {
+
+    //             height: 100vh;
+
+    //             @media (max-width: 500px) {}
+    //         }
+
+
+    //     }
+
+    //     .body-container {
+    //         font-family: @buda;
+
+    //         // background-color: @cerulean;
+    //         #intro {
+    //             background-color: @ceruleanLight;
+    //             margin: 3%;
+    //             border-bottom: 3px solid @cerulean;
+
+    //             h1 {
+    //                 font-size: @fontSize;
+    //             }
+
+    //         }
+
+    //         #skills {
+    //             #intro(); //mix-in
+    //         }
+
+    //         #work-history {
+    //             #intro(); //mix-in
+    //         }
+
+    //         #contacts {
+    //             #intro(); //mix-in
+    //         }
+
+    //     }
 
     // .body-container {
     // 	#intro {
@@ -414,4 +436,4 @@ body {
     // 		background-color: @ceruleanLight;
     // 	}
     // }	
-// }
+    // }

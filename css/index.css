@@ -129,7 +129,6 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
-  /* border: 1px solid blue !important; */
 }
 html {
   font-size: 62.5%;
@@ -204,6 +203,9 @@ body {
   border-radius: 1rem;
   font-family: 'Londrina Solid', cursive;
 }
+.container #intro h1 {
+  background-color: #2a52be;
+}
 @media (max-width: 945px) {
   .container #intro {
     font-size: 2rem;
@@ -231,6 +233,9 @@ body {
   border-radius: 1rem;
   font-family: 'Londrina Solid', cursive;
 }
+.container #skills h1 {
+  background-color: #2a52be;
+}
 @media (max-width: 945px) {
   .container #skills {
     font-size: 2rem;
@@ -246,6 +251,10 @@ body {
     font-size: 1rem;
   }
 }
+.container #skills h1 {
+  font-size: 3rem;
+  background-color: #2a52be;
+}
 .container #work-history {
   display: flex;
   flex-flow: column wrap;
@@ -259,12 +268,13 @@ body {
 }
 .container #work-history h1 {
   font-size: 3rem;
+  background-color: #2a52be;
 }
 .container #work-history p {
   font-size: 2rem;
 }
 .container #work-history li {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 .container #contacts {
   display: flex;
@@ -277,6 +287,10 @@ body {
   border-bottom: 3px solid #2a52be;
   border-radius: 1rem;
   font-family: 'Londrina Solid', cursive;
+  background-color: #2a52be;
+}
+.container #contacts h1 {
+  background-color: #2a52be;
 }
 @media (max-width: 945px) {
   .container #contacts {
