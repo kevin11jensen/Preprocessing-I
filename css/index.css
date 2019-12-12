@@ -1,1 +1,295 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  border: 1px solid blue !important;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+}
+.container nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(42, 82, 190, 0.2);
+  font-family: 'Racing Sans One', cursive;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 1rem;
+}
+.container nav a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #2a52be;
+}
+@media (max-width: 520px) {
+  .container nav a {
+    font-size: 1rem;
+  }
+}
+.container header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1% 1% 1%;
+  width: 98%;
+  height: 66vh;
+  background: url("../img/justMtHood2.jpg");
+  border-bottom: 3px solid #2a52be;
+}
+.container header div {
+  font-size: 5rem;
+  color: #2a52be;
+  font-family: 'Racing Sans One', cursive;
+}
+@media (max-width: 577px) {
+  .container header div {
+    font-size: 3rem;
+  }
+}
+.container header div h2 {
+  font-size: 4rem;
+}
+@media (max-width: 577px) {
+  .container header div h2 {
+    font-size: 2rem;
+  }
+}
+.container header div h3 {
+  font-size: 3rem;
+}
+@media (max-width: 577px) {
+  .container header div h3 {
+    font-size: 1.5rem;
+  }
+}
+.container #intro {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  font-size: 3rem;
+  margin: 2%;
+  background-color: rgba(42, 82, 190, 0.2);
+  padding-bottom: 5%;
+  border-bottom: 3px solid #2a52be;
+  border-radius: 1rem;
+  font-family: 'Londrina Solid', cursive;
+}
+@media (max-width: 945px) {
+  .container #intro {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 653px) {
+  .container #intro {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 559px) {
+  .container #intro {
+    font-size: 1rem;
+  }
+}
+.container #skills {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  font-size: 3rem;
+  margin: 2%;
+  background-color: rgba(42, 82, 190, 0.2);
+  padding-bottom: 5%;
+  border-bottom: 3px solid #2a52be;
+  border-radius: 1rem;
+  font-family: 'Londrina Solid', cursive;
+}
+@media (max-width: 945px) {
+  .container #skills {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 653px) {
+  .container #skills {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 559px) {
+  .container #skills {
+    font-size: 1rem;
+  }
+}
+.container #work-history {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin: 2%;
+  background-color: rgba(42, 82, 190, 0.2);
+  padding-bottom: 5%;
+  border-bottom: 3px solid #2a52be;
+  border-radius: 1rem;
+  font-family: 'Londrina Solid', cursive;
+}
+.container #work-history h1 {
+  font-size: 3rem;
+}
+.container #work-history p {
+  font-size: 2rem;
+}
+.container #work-history li {
+  font-size: 2rem;
+}
+.container #contacts {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  font-size: 3rem;
+  margin: 2%;
+  background-color: rgba(42, 82, 190, 0.2);
+  padding-bottom: 5%;
+  border-bottom: 3px solid #2a52be;
+  border-radius: 1rem;
+  font-family: 'Londrina Solid', cursive;
+}
+@media (max-width: 945px) {
+  .container #contacts {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 653px) {
+  .container #contacts {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 559px) {
+  .container #contacts {
+    font-size: 1rem;
+  }
+}
